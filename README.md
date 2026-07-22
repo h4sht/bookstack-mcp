@@ -7,12 +7,14 @@
 [![tests](https://img.shields.io/badge/tests-32%2F32-brightgreen)]()
 [![node](https://img.shields.io/badge/node-%3E%3D18-brightgreen?logo=node.js)](https://nodejs.org)
 
+> The package is also `@h4sht/bookstack-mcp` on npm — same server, same command.
+
 ---
 
-## 🚀 One-command install
+## 🚀 Claude Code
 
 ```bash
-claude mcp add bookstack -- npx @h4sht/bookstack-mcp
+claude mcp add bookstack -- npx github:h4sht/bookstack-mcp
 ```
 
 Claude Code will prompt you for:
@@ -25,7 +27,7 @@ Or pass them directly:
 claude mcp add bookstack \
   --env BOOKSTACK_BASE_URL=https://wiki.example.com/api \
   --env BOOKSTACK_API_TOKEN=token_id:token_secret \
-  -- npx @h4sht/bookstack-mcp
+  -- npx github:h4sht/bookstack-mcp
 ```
 
 Then use `/mcp` inside Claude Code to verify it's connected ✔
@@ -117,7 +119,7 @@ Or add to `opencode.json`:
 
 ### Cline (VS Code)
 
-Add to Cline MCP settings (`~/Library/Application Support/Code/User/globalStorage/saoudrizwan.claude-dev/settings/cline_mcp_settings.json`):
+Add to Cline MCP settings file:
 
 ```json
 {
