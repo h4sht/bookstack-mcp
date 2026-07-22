@@ -65,14 +65,84 @@ Pages are also exported as Markdown, so Claude can read, analyze, and improve ex
 
 ---
 
-## 📦 Also works with
+## 📦 Setup for other AI assistants
 
-- **Codex** (OpenAI)
-- **OpenCode**
-- **Cline**
-- Any MCP-compatible assistant with stdio transport
+### OpenAI Codex
 
-Just use `npx @h4sht/bookstack-mcp` as the server command.
+```bash
+codex mcp add bookstack \
+  --env BOOKSTACK_BASE_URL=https://wiki.example.com/api \
+  --env BOOKSTACK_API_TOKEN=id:secret \
+  -- npx github:h4sht/bookstack-mcp
+```
+
+Or add this to `~/.codex/config.toml`:
+
+```toml
+[mcp_servers.bookstack]
+command = "npx"
+args = ["github:h4sht/bookstack-mcp"]
+
+[mcp_servers.bookstack.env]
+BOOKSTACK_BASE_URL = "https://wiki.example.com/api"
+BOOKSTACK_API_TOKEN = "id:secret"
+```
+
+Verify with: `codex mcp list`
+
+### OpenCode
+
+```bash
+opencode mcp add
+# Select "local", then enter: npx github:h4sht/bookstack-mcp
+```
+
+Or add to `opencode.json`:
+
+```jsonc
+{
+  "mcp": {
+    "bookstack": {
+      "type": "local",
+      "command": ["npx", "github:h4sht/bookstack-mcp"],
+      "enabled": true,
+      "environment": {
+        "BOOKSTACK_BASE_URL": "https://wiki.example.com/api",
+        "BOOKSTACK_API_TOKEN": "id:secret"
+      }
+    }
+  }
+}
+```
+
+### Cline (VS Code)
+
+Add to Cline MCP settings (`~/Library/Application Support/Code/User/globalStorage/saoudrizwan.claude-dev/settings/cline_mcp_settings.json`):
+
+```json
+{
+  "mcpServers": {
+    "bookstack": {
+      "command": "npx",
+      "args": ["github:h4sht/bookstack-mcp"],
+      "env": {
+        "BOOKSTACK_BASE_URL": "https://wiki.example.com/api",
+        "BOOKSTACK_API_TOKEN": "id:secret"
+      }
+    }
+  }
+}
+```
+
+### Any MCP-compatible assistant (stdio)
+
+The server command is always the same:
+
+```bash
+npx github:h4sht/bookstack-mcp
+```
+
+Set `BOOKSTACK_BASE_URL` and `BOOKSTACK_API_TOKEN` as environment variables.
 
 ---
 
