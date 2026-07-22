@@ -1,13 +1,20 @@
 # @h4sht/bookstack-mcp
 
-> MCP server for BookStack — connect Claude Code, Codex, OpenCode and any AI assistant to your BookStack wiki. **One command, zero config files, instant setup.**
+<p align="center">
+  <img src="https://www.bookstackapp.com/images/bookstack-logo.svg" alt="BookStack" width="400" />
+</p>
 
-[![GitHub repo](https://img.shields.io/badge/github-h4sht%2Fbookstack--mcp-blue?logo=github)](https://github.com/h4sht/bookstack-mcp)
-[![license MIT](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
-[![tests](https://img.shields.io/badge/tests-32%2F32-brightgreen)]()
-[![node](https://img.shields.io/badge/node-%3E%3D18-brightgreen?logo=node.js)](https://nodejs.org)
+<p align="center">
+  <strong>MCP server for BookStack</strong> — connect Claude Code, Codex, OpenCode and any AI assistant to your BookStack wiki.<br>
+  <em>One command, zero config files, instant setup.</em>
+</p>
 
-> The package is also `@h4sht/bookstack-mcp` on npm — same server, same command.
+<p align="center">
+  <a href="https://github.com/h4sht/bookstack-mcp"><img src="https://img.shields.io/badge/github-h4sht%2Fbookstack--mcp-blue?logo=github" alt="GitHub repo"></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="License MIT"></a>
+  <img src="https://img.shields.io/badge/tests-32%2F32-brightgreen" alt="Tests 32/32">
+  <img src="https://img.shields.io/badge/node-%3E%3D18-brightgreen?logo=node.js" alt="Node >=18">
+</p>
 
 ---
 
