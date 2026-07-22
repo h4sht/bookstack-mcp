@@ -1,7 +1,7 @@
 # @h4sht/bookstack-mcp
 
 <p align="center">
-  <img src="https://www.bookstackapp.com/images/bookstack-logo.svg" alt="BookStack" width="400" />
+  <img src="https://raw.githubusercontent.com/BookStackApp/BookStack/development/public/icon.png" alt="BookStack" width="120" />
 </p>
 
 <p align="center">
