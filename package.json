@@ -1,0 +1,58 @@
+{
+  "name": "@h4sht/bookstack-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for BookStack — connect Claude Code, Codex, OpenCode and other AI assistants to your BookStack wiki. 25 tools: CRUD books, chapters, pages, shelves, search, export to markdown.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "bookstack-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "bookstack",
+    "claude",
+    "claude-code",
+    "codex",
+    "opencode",
+    "model-context-protocol",
+    "wiki",
+    "markdown"
+  ],
+  "author": "h4sht",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.23.1",
+    "typescript": "^5.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/h4sht/bookstack-mcp.git"
+  },
+  "homepage": "https://github.com/h4sht/bookstack-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/h4sht/bookstack-mcp/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
