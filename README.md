@@ -2,8 +2,10 @@
 
 > MCP server for BookStack — connect Claude Code, Codex, OpenCode and any AI assistant to your BookStack wiki. **One command, zero config files, instant setup.**
 
-[![npm version](https://img.shields.io/npm/v/@h4sht/bookstack-mcp)](https://www.npmjs.com/package/@h4sht/bookstack-mcp)
-[![license MIT](https://img.shields.io/npm/l/@h4sht/bookstack-mcp)](./LICENSE)
+[![GitHub repo](https://img.shields.io/badge/github-h4sht%2Fbookstack--mcp-blue?logo=github)](https://github.com/h4sht/bookstack-mcp)
+[![license MIT](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
+[![tests](https://img.shields.io/badge/tests-32%2F32-brightgreen)]()
+[![node](https://img.shields.io/badge/node-%3E%3D18-brightgreen?logo=node.js)](https://nodejs.org)
 
 ---
 
